@@ -23,6 +23,8 @@ python tools/train.py configs/skeleton/stgcnpp/stgcnpp_mmad_22.py --seed 0 --det
 
 # Test:
 
+cd mmaction2
+
 python tools/test.py configs/skeleton/stgcnpp/stgcnpp_mmad_binary.py checkpoints/SOME_CHECKPOINT.pth --dump result_binary.pkl # binary classification
 
 python tools/test.py configs/skeleton/stgcnpp/stgcnpp_mmad_binary.py checkpoints/SOME_CHECKPOINT.pth --dump result_22.pkl # 22-Class Classification
